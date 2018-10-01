@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Nopale</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  class="masters">
+
+
+
+
+            <div cards>
+
+              <div class="grid-full">
+                <ion-row>
+                  <ion-col align-self-start>  <ion-card class="fade1">
+                    <img src="assets/imgs/recharger.jpg" (click)="nav('rech')"  />
+                    <ion-fab right bottom>
+
+                    </ion-fab>
+                    <div class="card-title" align="center" margin-left="5px">RECHARGER</div>
+
+
+                  </ion-card></ion-col>
+
+                <ion-col >  <ion-card  class="fade2">
+                 <img src="assets/imgs/solde.jpg" (click)="nav('sold')" />
+                    <ion-fab right bottom>
+
+                    </ion-fab>
+                    <div class="card-title" align="center">SOLDE</div>
+
+                  </ion-card></ion-col>
+                  <ion-col align-self-start>  <ion-card  class="fade1">
+                    <img src="assets/imgs/Historical_icon-icons.com_54175.png" (click)="nav('his')" />
+                    <ion-fab right bottom>
+
+                    </ion-fab>
+                    <div class="card-title" align="center">HISTORIQUES</div>
+
+                  </ion-card></ion-col>
+
+                <ion-col >
+
+                    <ion-card  class="fade2">
+
+ <img src="assets/imgs/abonnement.png" height="90px" (click)="nav('ab')" />
+                    <ion-fab right bottom>
+
+                    </ion-fab>
+                    <div class="card-title" align="center">ABONNEMENT</div>
+
+                  </ion-card></ion-col>
+                </ion-row>
+
+              </div>
+              <ion-row>
+                <ion-col align-self-start>  <ion-card>
+                    <img src="assets/imgs/assistance.png"  (click)="nav('ass')"/>
+                    <ion-fab right bottom>
+
+                    </ion-fab>
+                    <div class="card-title" align="center">ASSISTANCE</div>
+                  </ion-card></ion-col>
+
+
+              </ion-row>
+              </div>
+
+</ion-content>

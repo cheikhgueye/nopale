@@ -1,0 +1,82 @@
+page-home {
+  .masters{
+    background-color:blue
+
+
+  }
+
+  .scroll-content {
+
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    flex: 1;
+    width: 50%;
+  }
+  img{
+
+    height: 120px;
+  }
+
+  [cards] {
+
+
+    .grid-full ion-col {
+        flex: 0 0 50%;
+        max-width: 100%;
+        padding: 5px 0;
+    }
+    .row {
+        padding: 0;
+
+    }
+    .col {
+        padding: 5px 0;
+
+    }
+    .card {
+        margin: 0 0 0 12px;
+        padding: 14px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 4px;
+
+    }
+}
+
+.fade1 {
+  -webkit-animation:  slidein1 ,masuperanimation 5s;
+  animation:  slidein1, masuperanimation 5s;
+  perspective: 800px;
+  perspective-origin: top left;
+  backface-visibility: hidden;
+
+
+  }
+  .fade2 {
+    -webkit-animation:  slidein2,masuperanimation 5s;
+    animation:  slidein2 , masuperanimation 5s;
+    backface-visibility: hidden;
+
+
+    }
+
+
+  @keyframes masuperanimation {
+    0% {
+        transform: translateY(-100%) rotate(180deg);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+       // transform:  rotate(30deg) scale3d(-1, -1,-1) ;
+
+    }
+}
+
+}

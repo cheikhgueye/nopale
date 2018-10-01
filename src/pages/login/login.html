@@ -1,0 +1,29 @@
+<ion-content class="background">
+  <ion-card>
+    <ion-card-header>
+Bienvenue sur Nopal3
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines>
+        <div class="spacer" style="height: 10px;"></div>
+        <ion-item>
+          <ion-input type="number" placeholder="Entrer votre numero de telephone" ></ion-input>
+        </ion-item>
+        <div class="spacer" style="height: 5px;"></div>
+
+        <div class="spacer" style="height: 10px;"></div>
+        <a (click)="passwordreset()">Changer de numero? <b> aide </b></a>
+        <div class="spacer" style="height: 10px;"></div>
+        <button ion-button block round outline color="light" (click)="signin()">valider</button>
+        <div class="spacer" style="height: 10px;"></div>
+        <p>OR</p>
+        <div class="spacer" style="height: 10px;"></div>
+        <button ion-button clear full color="light" (click)="signup()">pas de comptet? s'inscrire</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
+<ion-footer>
+</ion-footer>
