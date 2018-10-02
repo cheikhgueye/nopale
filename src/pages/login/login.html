@@ -7,7 +7,10 @@ Bienvenue sur Nopal3
       <ion-list no-lines>
         <div class="spacer" style="height: 10px;"></div>
         <ion-item>
-          <ion-input type="number" placeholder="Entrer votre numero de telephone" ></ion-input>
+          <ion-input type="number" placeholder="Entrer votre numero de telephone"  [(ngModel)]="credentials.numero" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="mot de passe" [(ngModel)]="credentials.password"></ion-input>
         </ion-item>
         <div class="spacer" style="height: 5px;"></div>
 

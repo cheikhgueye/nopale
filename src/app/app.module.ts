@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MailPage } from '../pages/mail/mail';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -17,8 +18,12 @@ import { AssistancePage } from '../pages/assistance/assistance';
 import { NFC } from "@ionic-native/nfc";
 import { EmailComposer } from '@ionic-native/email-composer';
 import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+
 
 import { CallNumber } from '@ionic-native/call-number';
+import { MainProvider } from '../providers/main/main';
+import { MainServiceProvider } from '../providers/main/main-service';
 
 
 @NgModule({
@@ -32,12 +37,14 @@ import { CallNumber } from '@ionic-native/call-number';
     AbonnementPage,
     AssistancePage,
     LoginPage ,
+    SignupPage ,
     MailPage
 
 
   ],
   imports: [
     BrowserModule,
+    HttpClientModule ,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -51,6 +58,7 @@ import { CallNumber } from '@ionic-native/call-number';
     AbonnementPage,
     AssistancePage,
     LoginPage ,
+    SignupPage ,
     MailPage
   ],
   providers: [
@@ -58,8 +66,10 @@ import { CallNumber } from '@ionic-native/call-number';
     SplashScreen,
     CallNumber,
     EmailComposer,
+    MainServiceProvider ,
     NFC ,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    MainProvider
   ]
 })
 export class AppModule {}
